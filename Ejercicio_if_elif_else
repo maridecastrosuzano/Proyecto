@@ -1,0 +1,18 @@
+"""
+Una empresa online ofrece envio a domicilio basado en una tabla de descuento según el monto del pedido
+-Si el pedido es mayor o igual a 1500, se realiza un envío express gratis.
+-Si el pedido es mayor o igual a 1000 pero menos a 1500, el envío es gratis pero se realiza mediante un servicio estándar.
+-Si es mayor o igual a 500 pero menor a 1000, el envío tiene un costo de 10 y se envía mediante el servicio estándar.
+-Si el envio es menor a 500, no se puede procesar el envío.
+"""
+
+monto_pedido = float(input("Por favor indique el monto total de su pedido: "))
+
+if monto_pedido >= 1500:
+    print("Su pedido será enviado con el servicio express gratis.")
+elif monto_pedido >= 1000 and monto_pedido <1500:
+    print("Su pedido será enviado con el servicio estándar gratis.")
+elif monto_pedido >= 500 and monto_pedido <1000:
+    print("Su pedido será enviado con el servicio estándar por un costo de 10$.")
+else:
+    print("Lo sentimos, pero su pedido no puede ser enviado. Deberá recogerlo en nuestra tienda.")
