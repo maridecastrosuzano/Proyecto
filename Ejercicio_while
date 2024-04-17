@@ -1,0 +1,25 @@
+"""
+Escribe un programa en el que se genera un número del 1 al 20 al azar.
+El concursante tiene 5 intentos para adivinarlo, ingresando valores.
+Ante cada respuesta se le retroalimenta "el número es mayor" o el "número es menor" y se le avisa si acierta.
+Si consume los intentos, se le informa y dice el número pedido
+"""
+
+import random
+numero_azar = random.randint(1,20)
+intentos =0
+
+while intentos < 5:
+    numero = int(input("Introduzca un número: "))
+    intentos +=1
+    if numero > numero_azar:
+        print(f"El número ingresado es mayor.")
+    if numero < numero_azar:
+        print(f"El número ingresado es menor.")
+    if numero == numero_azar:
+        break
+
+if numero == numero_azar:
+    print("Has adivinado")
+else:
+    print(f"Has fallado. EL número era {numero_azar}")
