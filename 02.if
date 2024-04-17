@@ -1,0 +1,12 @@
+"""
+Escribe un programa para una empresa de mensajeria que se encarga de enviar paquetes a diferentes destinos.
+La variable "x" representa el código postal de un destino al que se está enviando un paquete.
+Si el paquete va a la ciudad A, B o C el paquete será entregado allí.
+Pero si el destino es otro, lamentablemente no lo podremos entregar ahí.
+"""
+
+x = input("Por favor introduce la ciudad: ")
+if x == "A" or x =="B" or x == "C":
+    print(f"Tu paquete será entregado en la ciudad {x}")
+else:
+    print(f"Lo lamentamos, no podemos entregar tu paquete en la ciudad {x}")
