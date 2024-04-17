@@ -1,3 +1,4 @@
+EJERCICIO 1
 """
 Una empresa online ofrece envio a domicilio basado en una tabla de descuento según el monto del pedido
 -Si el pedido es mayor o igual a 1500, se realiza un envío express gratis.
@@ -16,3 +17,38 @@ elif monto_pedido >= 500 and monto_pedido <1000:
     print("Su pedido será enviado con el servicio estándar por un costo de 10$.")
 else:
     print("Lo sentimos, pero su pedido no puede ser enviado. Deberá recogerlo en nuestra tienda.")
+
+
+EJERCICIO 2
+"""
+Escribe un programa que le pregunte al usuario su edad y le muestre un mensaje dependiendo de la respuesta:
+eres menor de edad, eres mayor de edad o eres adulto mayor
+"""
+
+edad = int(input("Introduzca su edad: "))
+
+if edad < 18:
+    print("Eres menor de edad.")
+elif edad >= 18 and edad < 65:
+    print("Eres mayor de edad.")
+else:
+    print("Eres adulto mayor.")
+
+
+EJERCICIO 3
+"""
+Escribir un programa que le pida al usuario dos numeros enteros y que los compare
+-Si el primer número es mayor que el segundo, el programa debe imprimir "El primer número es mayor"
+-Si el segundo número es mayor que el primero, el programa debe imprimir "El segundo número es mayor"
+-Si los dos números son iguales, el programa debe imprimir "Los dos números son iguales"
+"""
+
+num1,num2 = map(int,input("Introduzca dos números enteros separados por un espacio: ").split())
+
+if num1 > num2:
+    print("El primer número es mayor")
+elif num1 < num2:
+    print("El segundo número es mayor")
+else:
+    print("Los dos números son iguales")
+
