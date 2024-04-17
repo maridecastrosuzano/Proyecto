@@ -1,0 +1,18 @@
+"""
+Crear un programa que solicite al usuario 
+-El precio de un articulo
+-La cantidad que comprará
+-El porcentaje de descuento que se ofrece para ese artículo
+
+Hecho esto nos retornará el valor a pagar de la forma:
+"El valor total a pagar es de... pesos"
+"""
+
+precio = float(input("Por favor, introduzca el precio del artículo: \n"))
+cantidad = int(input("Por favor introduzca la cantidad de artículos que comprará: \n"))
+porc_descuento= float(input("Por favor indique el porcentaje de descuento ofrecido: \n"))
+
+descuento = precio*(porc_descuento/100)
+total_a_pagar = (precio- descuento)*cantidad
+
+print(f"El valor total a pagar es de {total_a_pagar} pesos")
