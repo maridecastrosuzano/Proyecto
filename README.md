@@ -1,4 +1,4 @@
-Ejercicios de Python
+Ejercicios de Python:
 
 Este repositorio contiene ejercicios básicos realizados en el lenguaje Python con el fin único de practicar.
 
