@@ -4,7 +4,8 @@ y luego seleccionar entre dos emocionantes actividades:
 hacer una caminata espacial o pilotar un rover
 """
 
-Resultado
+Resultado:
+
 destino = input("Dinos tu destino planetario favorito. \nLuna o Marte?: ")
 
 if destino == "Luna":
