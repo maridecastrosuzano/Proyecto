@@ -3,6 +3,8 @@ EJERCICIO 1
 Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas.
 """
 
+Resultado: 
+
 lista1=["manzana","naranja","uva","fresa","kiwi"]
 lista2=["sandía","mango","kiwi","fresa","limón"]
 comunes=[]
@@ -18,6 +20,8 @@ EJERCICIO 2
 """
 Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas, usando compresión de listas.
 """
+
+Resultado:
 
 lista1=["gato","perro","loro","mariposa","raton","rana","leon"]
 lista2=["raton","vaca","gallina","gato","cucaracha", "rana"]
