@@ -1,3 +1,4 @@
+EJERCICIO 1
 """
 En una consulta médica se han registrado los datos de pacientes que han asistido a un examen general.
 Los datos se encuentran almacenados en una lista de diccionarios,donde cada diccionario representa los datos de un paciente 
@@ -38,3 +39,25 @@ print(f"La edad promedio es: {edad_promedio}")
 print(f"El peso promedio es: {peso_promedio}")
 print(f"La altura promedio es: {altura_promedio}")
 print(f"La temperatura promedio es: {temperatura_promedio}")
+
+
+EJERCICIO 2
+"""
+Crea un diccionario con el nombre de tus amigos y la ciudad donde viven.
+Pide a un usuario que introduzca el nombre de otro amigo e insertálo en el diccionario
+Imprime el diccionario
+"""
+
+Resultado: 
+
+#creacion del diccionario 
+amigos = {"Giacomo":"Pisa", "Greivis": "Paris", "Taibis": "Nirgua", "Ainhoa":"Vigo", "Kundry":"San Francisco"}
+
+# solicitud al usuario de nuevos amigos
+nuevo_amigo = input("Introduce el nombre de un nuevo amigo: ")
+ciudad_nuevo_amigo = input("Introduce la ciudad donde vive tu nuevo amigo: ")
+amigos [nuevo_amigo] = ciudad_nuevo_amigo
+
+print("Este es el diccionario de amigos y ciudades: ")
+for amigo, ciudad in amigos.items():
+    print(f"{amigo} vive en {ciudad}")
