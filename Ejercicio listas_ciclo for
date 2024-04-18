@@ -1,0 +1,26 @@
+EJERCICIO 1
+"""
+Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas.
+"""
+
+lista1=["manzana","naranja","uva","fresa","kiwi"]
+lista2=["sandía","mango","kiwi","fresa","limón"]
+comunes=[]
+
+for fruta in lista1:
+    if fruta in lista2:
+        comunes.append(fruta)
+
+print("Elementos comunes en ambas listas: ", comunes)
+
+
+EJERCICIO 2
+"""
+Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas, usando compresión de listas.
+"""
+
+lista1=["gato","perro","loro","mariposa","raton","rana","leon"]
+lista2=["raton","vaca","gallina","gato","cucaracha", "rana"]
+comunes=[animal for animal in lista1 if animal in lista2]
+
+print(f"Los animales comunes en ambas listas son: {comunes}")
