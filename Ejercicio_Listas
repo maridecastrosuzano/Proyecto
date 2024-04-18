@@ -1,0 +1,60 @@
+EJERCICIO 1
+"""
+Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas.
+"""
+
+Resultado: 
+
+lista1=["manzana","naranja","uva","fresa","kiwi"]
+lista2=["sandía","mango","kiwi","fresa","limón"]
+comunes=[]
+
+for fruta in lista1:
+    if fruta in lista2:
+        comunes.append(fruta)
+
+print("Elementos comunes en ambas listas: ", comunes)
+
+
+EJERCICIO 2
+"""
+Crea un programa que compare dos listas y muestre los elementos que están presentes en ambas listas, usando compresión de listas.
+"""
+
+Resultado:
+
+lista1=["gato","perro","loro","mariposa","raton","rana","leon"]
+lista2=["raton","vaca","gallina","gato","cucaracha", "rana"]
+comunes=[animal for animal in lista1 if animal in lista2]
+
+print(f"Los animales comunes en ambas listas son: {comunes}")
+
+
+EJERCICIO 3
+"""
+Crea una lista con tus peliculas favoritas, pide al usuario que agregue una película y anadela a la lista inicial.
+Luego pide al usuario que introduzca una pelicula que quiera eliminar de la lista y finalmente imprime la lista definitiva.
+"""
+
+Resultado:
+
+# creación de lista
+peliculas_favoritas = ["El Padrino", "Titanic", "El Senor de los Anillos", "La Cenicienta"]
+
+# solicitud al usuario de una película nueva 
+pelicula_nueva = input("Introduce una película nueva: ")
+
+# agregar la película nueva a la lista
+peliculas_favoritas.append(pelicula_nueva)
+
+print("Nueva lista de películas: ")
+for pelicula in peliculas_favoritas:
+    print("-", pelicula)
+
+# solicitud al usuario de una pelicula de la lista que desea eliminar
+pelicula_eliminar = input("Introduce una película que quieras eliminar de la lista: ")
+peliculas_favoritas.remove(pelicula_eliminar)
+
+print("La lista actualizada es la siguiente: ")
+for pelicula in peliculas_favoritas:
+    print("-", pelicula)
