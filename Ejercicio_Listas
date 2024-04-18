@@ -58,3 +58,21 @@ peliculas_favoritas.remove(pelicula_eliminar)
 print("La lista actualizada es la siguiente: ")
 for pelicula in peliculas_favoritas:
     print("-", pelicula)
+
+
+EJERCICIO 4
+"""
+Crea una lista con tus libros favoritos y ordenala de manera alfabética
+"""
+
+Resultado:
+
+#creación de lista
+libros_favoritos = ["1984", "Orgullo y prejuicio", "Como hacer que te pasen cosas buenas", "El plan de tu alma","La ciudad y los perros", "Usted puede sanar"]
+
+# ordenar la lista
+libros_favoritos.sort()
+
+print("Lista de libros ordenada alfabéticamente: ")
+for libro in libros_favoritos:
+    print("-", libro)
