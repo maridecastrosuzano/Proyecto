@@ -7,6 +7,8 @@ Una empresa online ofrece envio a domicilio basado en una tabla de descuento seg
 -Si el envio es menor a 500, no se puede procesar el envío.
 """
 
+Resultado:
+
 monto_pedido = float(input("Por favor indique el monto total de su pedido: "))
 
 if monto_pedido >= 1500:
@@ -25,6 +27,8 @@ Escribe un programa que le pregunte al usuario su edad y le muestre un mensaje d
 eres menor de edad, eres mayor de edad o eres adulto mayor
 """
 
+Resultado:
+
 edad = int(input("Introduzca su edad: "))
 
 if edad < 18:
@@ -42,6 +46,8 @@ Escribir un programa que le pida al usuario dos numeros enteros y que los compar
 -Si el segundo número es mayor que el primero, el programa debe imprimir "El segundo número es mayor"
 -Si los dos números son iguales, el programa debe imprimir "Los dos números son iguales"
 """
+
+Resultado: 
 
 num1,num2 = map(int,input("Introduzca dos números enteros separados por un espacio: ").split())
 
