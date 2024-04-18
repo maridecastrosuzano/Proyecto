@@ -5,6 +5,8 @@ Si el paquete va a la ciudad A, B o C el paquete será entregado allí.
 Pero si el destino es otro, lamentablemente no lo podremos entregar ahí.
 """
 
+Resultado:
+
 x = input("Por favor introduce la ciudad: ")
 if x == "A" or x =="B" or x == "C":
     print(f"Tu paquete será entregado en la ciudad {x}")
