@@ -5,6 +5,8 @@ Ante cada respuesta se le retroalimenta "el número es mayor" o el "número es m
 Si consume los intentos, se le informa y dice el número pedido
 """
 
+Resultado:
+
 import random
 numero_azar = random.randint(1,20)
 intentos =0
