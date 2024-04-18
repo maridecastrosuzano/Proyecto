@@ -1,0 +1,40 @@
+"""
+En una consulta médica se han registrado los datos de pacientes que han asistido a un examen general.
+Los datos se encuentran almacenados en una lista de diccionarios,donde cada diccionario representa los datos de un paciente 
+y contiene las claves:
+-nombre:el nombre del paciente
+-edad:la edad del paciente en años
+-peso:el peso del paciente en kilogramos
+-altura:la altura del paciente en metros
+-temperatura:la temperatura corporal del paciente en grados Celsius
+El médico desea saber cuál es el promedio de edad,peso,altura y temperatura de los pacientes que han asistido a la consulta.
+"""
+
+Resultado:
+
+pacientes= [
+    {"nombre": "Eduardo", "edad": 35, "peso": 60, "altura": 1.70, "temperatura": 36},
+    {"nombre": "Luis", "edad": 30, "peso": 54, "altura": 1.56, "temperatura": 35},
+    {"nombre": "Carla", "edad": 25, "peso": 72, "altura": 1.65, "temperatura": 38.5},
+    {"nombre": "Andrera", "edad": 28, "peso": 68, "altura": 1.68, "temperatura": 39},
+    {"nombre": "Marcos", "edad": 36, "peso": 46, "altura": 1.72, "temperatura": 36},
+    {"nombre": "Karina", "edad": 18, "peso": 74 ,"altura": 1.80, "temperatura": 37}
+]
+
+# promedio edad
+edad_promedio = round(sum ([paciente["edad"] for paciente in pacientes]) / len(pacientes),2)
+
+# promedio peso
+peso_promedio = round(sum ([paciente["peso"] for paciente in pacientes]) / len(pacientes),2)
+
+# promedio altura
+altura_promedio = round(sum ([paciente["altura"] for paciente in pacientes]) / len(pacientes),2)
+
+# promedio temperatura
+temperatura_promedio = round(sum ([paciente["temperatura"] for paciente in pacientes]) / len(pacientes),2)
+
+
+print(f"La edad promedio es: {edad_promedio}")
+print(f"El peso promedio es: {peso_promedio}")
+print(f"La altura promedio es: {altura_promedio}")
+print(f"La temperatura promedio es: {temperatura_promedio}")
