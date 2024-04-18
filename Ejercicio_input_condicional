@@ -1,0 +1,28 @@
+"""
+Crea un programa interactivo que permita al usuario elegir su destino interplanetario favorito entre la Luna y Marte,
+y luego seleccionar entre dos emocionantes actividades:
+hacer una caminata espacial o pilotar un rover
+"""
+
+Resultado
+destino = input("Dinos tu destino planetario favorito. \nLuna o Marte?: ")
+
+if destino == "Luna":
+    actividad = input("Quieres hacer una caminata espacial o pilotar un rover? \nMarca 1 para caminata espacial y 2 para pilotar y un rover: ")
+    if actividad == "1":
+        print("Genial, prepárate para poner un pie en la luna.")
+    elif actividad == "2":
+        print("Fantástico! A pilotar un rover y explorar la luna.")
+    else:
+        print("Por favor introduce una opción de actividad válida.")
+
+elif destino == "Marte":
+    actividad = input("Quieres hacer una caminata espacial o pilotar un rover? \nMarca 1 para caminata espacial y 2 para pilotar y un rover: ")
+    if actividad == "1":
+        print("Fantástico. Una caminata espacial en Marte.")
+    elif actividad == "2":
+        print("Genial, a pilotar un rover y explorar Marte!!")
+    else:
+        print("Por favor introduce una opción de actividad válida.")
+else:
+    print("Lo siento, no entiendo tu destino")
