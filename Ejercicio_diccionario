@@ -61,3 +61,24 @@ amigos [nuevo_amigo] = ciudad_nuevo_amigo
 print("Este es el diccionario de amigos y ciudades: ")
 for amigo, ciudad in amigos.items():
     print(f"{amigo} vive en {ciudad}")
+
+
+EJERCICIO 3
+"""
+Crea un diccionario con el nombre de tus amigos y su edad.
+Solicita al usuario una edad para buscar amigos que coincidan con la misma edad.
+Imprime el diccionario.
+"""
+
+Resultado:
+
+# creacion diccionario
+amigos = {"Giacomo": 39, "Greivis": 36, "Taibis": 33, "Ainhoa": 36, "Kundry":40}
+
+# solicitud al usuario de nuevos amigos
+edad_buscar = int(input("Introduce una edad para buscar amigos que tengan esa misma edad: "))
+
+print(f"Amigos que tienen {edad_buscar} años: ")
+for amigo, edad in amigos.items():
+    if edad == edad_buscar:
+        print("-", amigo)
