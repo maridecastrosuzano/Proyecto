@@ -82,3 +82,30 @@ print(f"Amigos que tienen {edad_buscar} años: ")
 for amigo, edad in amigos.items():
     if edad == edad_buscar:
         print("-", amigo)
+
+
+EJERCICIO 4
+"""
+Crea un diccionario con tus peliculas favoritas y año de lanzamiento.
+Solicita al usuario que ingrese el nombre de una pelicula y su fecha de lanzamiento.
+Luego pide al usuario que elimine una pelicula existente en el diccionario.
+Imprime el diccionario
+"""
+
+Resultado:
+
+# creación diccionario
+peliculas = {"El Padrino":1972, "Pulp Fiction":1994, "El Rey Leon":1994, "Titanic":1997}
+
+# solicitud usuario de nombre y fecha de lanzamiento de nueva película
+nombre_pelicula = input("Por favor introduce el nombre de una nueva película: ")
+fecha_lanzamiento_pelicula = int(input("Por favor introduce el nombre de una nueva película: "))
+peliculas[nombre_pelicula] = fecha_lanzamiento_pelicula
+
+# solicitud usuario para indicar una película que quiera eliminar
+pelicula_eliminar = input("Por favor introduce el nombre de una película que quieras eliminar: ")
+del peliculas[pelicula_eliminar]
+
+print("Lista de películas actualizada: ")
+for pelicula, anio in peliculas.items():
+    print(f"La pelicula {pelicula} se lanzó en {anio}.")
