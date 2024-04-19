@@ -1,0 +1,19 @@
+EJERCICIO 1
+# convertir lista en diccionario
+nombres = ["Juan", "Pedro", "Antonio", "Elena", "Susana", "Angel"]
+edad = [28, 35, 45, 32, 26, 31]
+
+diccionario = dict(zip(nombres,edad))
+
+print(diccionario)
+
+
+EJERCICIO 2
+# convertir diccionario a lista
+diccionario1 = {'Juan': 1.75, 'Pedro': 1.65, 'Antonio': 1.45, 'Elena': 1.86, 'Susana': 1.74, 'Angel': 1.62}
+
+nombres = list(diccionario1.keys())
+altura = list(diccionario1.values())
+
+print(nombres)
+print(altura)
