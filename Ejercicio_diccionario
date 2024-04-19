@@ -109,3 +109,28 @@ del peliculas[pelicula_eliminar]
 print("Lista de películas actualizada: ")
 for pelicula, anio in peliculas.items():
     print(f"La pelicula {pelicula} se lanzó en {anio}.")
+
+
+EJERCICIO 5
+"""
+Crea un diccionario con libros y sus respectivos autores y ordenálo.
+"""
+
+Resultado:
+
+#creación de diccionario
+libros={
+    "1984": "George Orwell", 
+    "Usted puede sanar": "Louise Hay",
+    "Orgullo y prejuicio": "Jane Austen", 
+    "Como hacer que te pasen cosas buenas": "Marian Rojas", 
+    "El plan de tu alma":"Robert Schwartz",
+    "La ciudad y los perros": "Mario Vargas LLosa"     
+}
+
+# ordenar diccioanrio
+libros_ordenados = dict(sorted(libros.items()))
+
+print("Lista de libros ordenados: ")
+for libro, autor in libros_ordenados.items():
+    print(f"- {libro}, fue escrito por {autor}")
